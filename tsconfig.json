@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "noEmitHelpers": true,
+    "suppressImplicitAnyIndexErrors": false,
+    "strictNullChecks": false,
+    "baseUrl": "./src",
+    "outDir": "",
+    /*"path":[
+
+    ],*/
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "types": [
+      "hammerjs",
+      "jasmine",
+      "node",
+      "protractor",
+      "selenium-webdriver",
+      "source-map",
+      "uplify-js",
+      "webpack"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "awesomeTypescriptLoaderOptions":{
+    "forkChecker":true,
+    "useWebpackText":true
+  },
+  "compileOnSave": false,
+  "buildOnSave":false,
+  "atom":{
+    "rewriteTsconfig":false
+  }
+}

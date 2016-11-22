@@ -1,0 +1,19 @@
+<h2>我的英雄</h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes"
+        [class.selected]="hero===selectedHero" 
+        (click)="onSelect(hero)">
+        <span class="hero-element">
+            <span class="badge">{{hero.id}}</span> {{hero.name}}
+        </span>        
+    </li>
+</ul>
+<div class="error" *ngIf="error">{{error}}</div>
+<button (click)="addHero()">添加英雄</button>
+<div *ngIf="addingHero">
+    <my-hero-detail (close)="close($event)"></my-hero-detail>
+</div>
+<div *ngIf="selectedHero">
+    <h2>{{selectedHero.name|uppercase}}是我的英雄</h2>
+    <button (click)="gotoDetail()">查看详情</button>
+</div>
