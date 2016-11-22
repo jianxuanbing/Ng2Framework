@@ -7,6 +7,7 @@
 # 快速开始
 **确保 Node的版本>=5.0 且 Npm的版本>=3**
 >克隆/下载仓库,然后编辑 `app.ts` 里面的 [`/src/app/app.ts`](/src/app/app.ts)
+
 ```bash
 # 克隆我的仓库
 # --depth 1 removes all but one .git commit history
@@ -32,6 +33,7 @@ npm start
 # 使用热模块替换(热插拔)
 npm run server:dev:hmr
 ```
+
 前往 [http://0.0.0.0:9060](http://0.0.0.0:9060) 或者 [http://localhost:9060](http://localhost:9060) 进行浏览
 
 # 目录内容
@@ -52,7 +54,8 @@ npm run server:dev:hmr
 ## 文件结构
 我们使用组件的方式启动。这是开发ng应用程序的新标准，以确保我们的行为逻辑的可维护的代码封装。一个组件式一个包含的应用通常在单个文件或文件夹。
 文件：style、template、specs、e2e、组件类。如下面文件目录：
-```
+
+```bash
 ng2Framework/
  ├──config/                    * 存放配置文件的目录
  |   ├──helpers.js             * 配置文件的辅助函数
